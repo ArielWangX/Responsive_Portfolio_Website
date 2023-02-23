@@ -1,10 +1,11 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Newsletter } from "./components/Newsletter";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Newsletter />
     </div>
   );
 }
