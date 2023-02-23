@@ -28,11 +28,11 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     let response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-            "Contact-Type": "Application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json;charset=utf-8",
+      },
+      body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
     let result = response.json();
@@ -92,8 +92,8 @@ export const Contact = () => {
               </Row>
               <Row className="mb-3">
                 <Col sm={12} className="px-1">
-                  <Form.Control
-                    type="message"
+                  <textarea
+                    rows="6"
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
