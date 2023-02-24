@@ -291,7 +291,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner .banner-image {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -304,6 +304,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
+}
+.banner .github-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.banner button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
