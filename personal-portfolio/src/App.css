@@ -220,6 +220,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.invert-svg-color {
+  -webkit-filter: invert(100%); 
+          filter: invert(100%);
+}
+.app-logo {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 6vmin;
+  height: 6vmin;
+  pointer-events: none;
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
 
 /* --Banner----------------------------------- */
 .banner {
