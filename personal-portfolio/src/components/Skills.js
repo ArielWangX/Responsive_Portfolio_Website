@@ -63,7 +63,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter5} alt="python" />
-                  <h5>CRUD Program</h5>
+                  <h5>Create-Read-Delete-Sorted Program</h5>
                 </div>
               </Carousel>
             </div>
