@@ -385,7 +385,7 @@ z-index: -4;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: left;
   width: 56%;
 }
 .project .nav.nav-pills {
@@ -458,7 +458,7 @@ z-index: -4;
 }
 .proj-imgbx:hover::before {
   height: 100%;
-}
+} 
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -467,14 +467,28 @@ z-index: -4;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
-  width: 100%;
+  width: 25vw;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
+.proj-imgb img {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.proj-txtx {
+  margin-top: 1.0vmin;
+}
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 2.0vw;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -482,8 +496,21 @@ z-index: -4;
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5vw;
   letter-spacing: 0.8px;
+}
+.projectcard-li {
+  list-style-type: circle;
+  padding-top: 0.3vmin;
+  font-size: 1.0vw;
+}
+.projectcard-container {
+  text-align: center;
+  margin-top: 0.5vmin;
+}
+.projectcard-ul {
+  display: inline-block;
+  text-align: left;
 }
 .background-image-right {
   top: 20%;
@@ -492,6 +519,12 @@ z-index: -4;
   width: 35%;
   right: 0;
   z-index: -4;
+}
+.proj-imgbx .github-link {
+  color: #fff;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -568,7 +601,7 @@ z-index: -4;
 }
 
 
-/* --Newsletter Section */
+/* --Newsletter Section----------------- */
 .newsletter-box {
   background: #FFFFFF;
   border-radius: 55px;

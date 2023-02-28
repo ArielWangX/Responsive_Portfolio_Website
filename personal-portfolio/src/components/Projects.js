@@ -11,34 +11,49 @@ import { isVisible } from "@testing-library/user-event/dist/utils";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "WorkoutLogger",
+      description: "Android Kotlin App",
+      content:
+        "Applied MVVM architecture, Using Jetpack Compose, Connecting with Room Database, Applying Coroutine and Dagger, ViewModels are unit tested",
       imgUrl: projImg1,
+      link: "https://github.com/ArielWangX/WorkoutLogger",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Personal Portfolio",
+      description: "React App Web Page",
+      content: "Learn from course project, Personalise each section",
       imgUrl: projImg2,
+      link: "https://github.com/ArielWangX/Responsive_Portfolio_Website",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Student Management System",
+      description: "Console-based C# Program",
+      content:
+        "Apply three layer architecture, Console-based UI interface, Connecting with SQLite Database, Implement CRUD operation on each table, Able to retrieve data from multiple tables, Import data from csv and Export table to csv",
       imgUrl: projImg3,
+      link: "https://github.com/ArielWangX/ICTPRG432-Develop-data-driven-applications",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Book Catalog",
+      description: "Python Desktop App",
+      content:
+        "Catalog-based UI interface, ISBN validation, Implement adding reading and deleting a book operations, Able to sorting by price",
       imgUrl: projImg1,
+      link: "https://github.com/ArielWangX/ICTPRG302-Apply-introductory-programming-techniques",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "No Content",
+      description: "Lorem ipsum dolor",
+      content: undefined,
       imgUrl: projImg2,
+      link: undefined,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "No Content",
+      description: "Lorem ipsum dolor",
+      content: undefined,
       imgUrl: projImg3,
+      link: undefined,
     },
   ];
 
@@ -48,7 +63,7 @@ export const Projects = () => {
         <Row>
           <Col>
             <TrackVisibility>
-              {({ isVisible }) => 
+              {({ isVisible }) => (
                 <div
                   className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
@@ -56,11 +71,16 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    I'm currently building a personal project: WorkoutLogger, an
+                    Android app to record exercise progress. <br />
+                    <br />
+                    The react-app project is this web page that displays my
+                    personal portfolio. <br />
+                    <br />
+                    During the programming school period, I developed a student
+                    management system connecting with a database using C# and a
+                    small program used to add, read, and delete a book and sort
+                    a book by ISBN using python.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -87,11 +107,24 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                      <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
-                </div>}
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
