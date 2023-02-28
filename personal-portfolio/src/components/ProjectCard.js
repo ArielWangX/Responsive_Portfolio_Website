@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
-export const ProjectCard = ({ title, description, content, imgUrl, link }) => {
+export const ProjectCard = ({ title, subTitle, description, imgUrl, link }) => {
   function NewList(props) {
     const text = props.text;
     let newText = "";
@@ -21,10 +21,10 @@ export const ProjectCard = ({ title, description, content, imgUrl, link }) => {
         <img src={imgUrl} alt={title} />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          <span>{description}</span>
+          <span>{subTitle}</span>
           <div className="projectcard-container">
             <ul className="projectcard-ul">
-              <NewList text={content} />
+              <NewList text={description} />
             </ul>
           </div>
           <a className="github-link" href={link}>

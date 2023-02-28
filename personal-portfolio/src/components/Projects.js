@@ -12,46 +12,46 @@ export const Projects = () => {
   const projects = [
     {
       title: "WorkoutLogger",
-      description: "Android Kotlin App",
-      content:
+      subTitle: "Android Kotlin App",
+      description:
         "Applied MVVM architecture, Using Jetpack Compose, Connecting with Room Database, Applying Coroutine and Dagger, ViewModels are unit tested",
       imgUrl: projImg1,
       link: "https://github.com/ArielWangX/WorkoutLogger",
     },
     {
       title: "Personal Portfolio",
-      description: "React App Web Page",
-      content: "Learn from course project, Personalise each section",
+      subTitle: "React App Web Page",
+      description: "Learn from course project, Personalise each section",
       imgUrl: projImg2,
       link: "https://github.com/ArielWangX/Responsive_Portfolio_Website",
     },
     {
       title: "Student Management System",
-      description: "Console-based C# Program",
-      content:
+      subTitle: "Console-based C# Program",
+      description:
         "Apply three layer architecture, Console-based UI interface, Connecting with SQLite Database, Implement CRUD operation on each table, Able to retrieve data from multiple tables, Import data from csv and Export table to csv",
       imgUrl: projImg3,
       link: "https://github.com/ArielWangX/ICTPRG432-Develop-data-driven-applications",
     },
     {
       title: "Book Catalog",
-      description: "Python Desktop App",
-      content:
+      subTitle: "Python Desktop App",
+      description:
         "Catalog-based UI interface, ISBN validation, Implement adding reading and deleting a book operations, Able to sorting by price",
       imgUrl: projImg1,
       link: "https://github.com/ArielWangX/ICTPRG302-Apply-introductory-programming-techniques",
     },
     {
       title: "No Content",
-      description: "Lorem ipsum dolor",
-      content: undefined,
+      subTitle: "Lorem ipsum dolor",
+      description: undefined,
       imgUrl: projImg2,
       link: undefined,
     },
     {
       title: "No Content",
-      description: "Lorem ipsum dolor",
-      content: undefined,
+      subTitle: "Lorem ipsum dolor",
+      description: undefined,
       imgUrl: projImg3,
       link: undefined,
     },
