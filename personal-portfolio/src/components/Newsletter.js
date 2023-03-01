@@ -25,13 +25,13 @@ export const Newsletter = ({ onValidated, status, message }) => {
     <Col lg={12}>
       <div className="newsletter-box">
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={5}>
+          <Col lg={12} md={6} xl={5}>
             <h3>Subscribe to our Newsletter</h3>
             {status === "sending" && <Alert>Sending...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
-          <Col xs={12} md={6} xl={7}>
+          <Col lg={12} md={6} xl={7}>
             <form onSubmit={handleSubmit}>
               <div className="new-email-box">
                 <input
