@@ -460,6 +460,8 @@ z-index: -4;
   height: 100%;
 } 
 .proj-txtx {
+  display: block; 
+  padding: 10%;
   position: absolute;
   text-align: center;
   top: 65%;
@@ -468,6 +470,7 @@ z-index: -4;
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 25vw;
+  margin-top: 1.0vmin;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -484,11 +487,8 @@ z-index: -4;
   width: 80%;
   flex-wrap: wrap;
 }
-.proj-txtx {
-  margin-top: 1.0vmin;
-}
 .proj-txtx h4 {
-  font-size: 2.0vw;
+  font-size: 1.5vw;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -496,13 +496,13 @@ z-index: -4;
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.0vw;
   letter-spacing: 0.8px;
 }
 .projectcard-li {
   list-style-type: circle;
   padding-top: 0.3vmin;
-  font-size: 1.0vw;
+  font-size: 0.8vw;
 }
 .projectcard-container {
   text-align: center;
